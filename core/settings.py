@@ -10,6 +10,9 @@ load_dotenv()
 BOT_TOKEN = getenv('BOT_TOKEN')
 # your google maps API key
 GOOGLE_MAPS_API_KEY = getenv('GOOGLE_MAPS_API_KEY')
+# creds for mailing
+GMAIL_APP_LOGIN = getenv('GMAIL_APP_LOGIN')
+GMAIL_APP_PASSWORD = getenv('GMAIL_APP_PASSWORD')
 # googl translate creds (GET THE CREDS FILE AT GOOGLE DEVELOPER CONSOLE)
 GOOGLE_TRANSLATE_CREDS_FILENAME = getenv('GOOGLE_TRANSLATE_CREDS_FILENAME')
 BASE_DIR_PATH = Path(__file__).resolve().parent.parent

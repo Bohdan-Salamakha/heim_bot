@@ -5,6 +5,8 @@ from core.settings import GOOGLE_MAPS_API_KEY
 
 class GoogleMapsRouteBuilder:
     def __init__(self, from_, to_):
+        # print(f'FROM: {from_}')
+        # print(f'TO: {to_}')
         self.__from_ = from_
         self.__to_ = to_
         self.__client: googlemaps.client.Client = googlemaps.Client(key=GOOGLE_MAPS_API_KEY)
@@ -23,4 +25,5 @@ class GoogleMapsRouteBuilder:
                   f"origin={lat_from},{lng_from}&" \
                   f"destination={lat_to},{lng_to}&" \
                   "travelmode=driving"
+        # print(url_api)
         return url_api

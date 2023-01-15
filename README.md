@@ -1,0 +1,4 @@
+## Set these environment variables:
+BOT_TOKEN = <YOUR_TELEGRAM_BOT_TOKEN>
+
+GOOGLE_MAPS_API_KEY = <YOUR_GOOGLE_MAPS_API_KEY>
