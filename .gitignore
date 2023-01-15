@@ -1,0 +1,4 @@
+.env
+venv
+google_translate_creds.json
+.idea
