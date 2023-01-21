@@ -93,3 +93,14 @@ def __get_body(message: telebot.types.Message,
                                message=letter_body)
     email_sender.send_email()
     bot.send_message(message.from_user.id, 'Successfully sent email!')
+
+
+@bot.message_handler(commands=['shutdown'])
+def bot_shutdown(message: telebot.types.Message):
+    if message.from_user.username == 'allen_avanheim':
+        print('SERVER IS TURNING OFF')
+        bot.send_message(message.from_user.id, 'SERVER IS TURNING OFF')
+        from os import _exit
+        _exit(0)
+    else:
+        bot.send_message(message.from_user.id, 'You are not an admin!')
